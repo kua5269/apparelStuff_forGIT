@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w",
+    "build:prod": "webpack -p",
+    "start": "nodemon dist/index.bundle.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,11 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-handlebars": "^3.0.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "webpack": "^5.73.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
   }
 }
